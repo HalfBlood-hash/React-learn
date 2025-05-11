@@ -53,7 +53,7 @@ function App() {
         <option value="">Select area</option>
           {
             area.map((areas,index)=>(
-            <option key={index}>{areas}</option>
+            <option key={index  }>{areas}</option>
             ))
           }
       </select>
