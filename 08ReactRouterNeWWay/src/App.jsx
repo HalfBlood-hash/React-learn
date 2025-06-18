@@ -10,6 +10,7 @@ import ContactInfo from './Components/ContactInfo'
 import ContactForm from './Components/ContantForm'
 import ContactLayout from './Components/ContactLayout'
 import {Route,createBrowserRouter,createRoutesFromElements,RouterProvider} from 'react-router-dom'
+import NotFound from './Components/NotFound'
 
 function App() {
   const router =createBrowserRouter(
@@ -23,6 +24,7 @@ function App() {
       <Route path='form' element={<ContactForm/>} />
     </Route>
     <Route path="login" element={<Login />} />
+    <Route path='*' element={<NotFound/>}/>
   </Route>
   )
 
