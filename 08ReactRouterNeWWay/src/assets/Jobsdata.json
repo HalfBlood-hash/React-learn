@@ -1,0 +1,42 @@
+
+
+{
+    "jobs":[
+        {
+            "id":1,
+            "title":"Sr. Developer",
+            "react":50000,
+            "location": "Delhi NCR"
+        },
+        {
+            "id":2,
+            "title":"Sr. Developer2",
+            "react":500002,
+            "location": "Delhi NCR2"
+        },
+        {
+            "id":3,
+            "title":"Sr. Developer3",
+            "react":500003,
+            "location": "Delhi NCR3"
+        },
+        {
+            "id":4,
+            "title":"Sr. Developer4",
+            "react":500004,
+            "location": "Delhi NCR4"
+        },
+        {
+            "id":5,
+            "title":"Sr. Developer5",
+            "react":500005,
+            "location": "Delhi NCR5"
+        },
+        {
+            "id":6,
+            "title":"Sr. Developer6",
+            "react":500006,
+            "location": "Delhi NCR6"
+        }
+    ]
+}

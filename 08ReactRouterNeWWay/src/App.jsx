@@ -11,6 +11,8 @@ import ContactForm from './Components/ContantForm'
 import ContactLayout from './Components/ContactLayout'
 import {Route,createBrowserRouter,createRoutesFromElements,RouterProvider} from 'react-router-dom'
 import NotFound from './Components/NotFound'
+import JobsLayout from './Components/jobsLayout'
+import Jobs, { jobloader } from './Components/Jobs'
 
 function App() {
   const router =createBrowserRouter(
@@ -24,6 +26,9 @@ function App() {
       <Route path='form' element={<ContactForm/>} />
     </Route>
     <Route path="login" element={<Login />} />
+    <Route path='jobs' element={<JobsLayout/>} >
+    <Route index element={<Jobs/>}  loader={jobloader} />
+    </Route>
     <Route path='*' element={<NotFound/>}/>
   </Route>
   )
