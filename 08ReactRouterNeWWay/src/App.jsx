@@ -6,8 +6,11 @@ import Rootlayout from './Components/RootLayout'
 import Home from './Components/Home'
 import AboutUs from './Components/AboutUs'
 import Login from './Components/Login'
-import Contact from './Components/Contact'
+import ContactInfo from './Components/ContactInfo'
+import ContactForm from './Components/ContantForm'
+import ContactLayout from './Components/ContactLayout'
 import {Route,createBrowserRouter,createRoutesFromElements,RouterProvider} from 'react-router-dom'
+
 function App() {
   const router =createBrowserRouter(
   createRoutesFromElements(
@@ -15,7 +18,10 @@ function App() {
     <Route index element={<Home />} />  {/* Default route */}
     {/* <Route path='/home' element={<Home />} /> */}
     <Route path="aboutus" element={<AboutUs />} />
-    <Route path="contact" element={<Contact />} />
+    <Route path="contact" element={<ContactLayout />} >
+      <Route path='info' element={<ContactInfo/>} />
+      <Route path='form' element={<ContactForm/>} />
+    </Route>
     <Route path="login" element={<Login />} />
   </Route>
   )
