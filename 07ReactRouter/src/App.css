@@ -46,12 +46,13 @@ a{
   outline: 1px solid blue;
   border-radius: 30px;
   background-color: #000;
-
+ 
 }
 .navbar button:hover{
   transform: scale(1.1); /* Makes button pop out */
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.8); /* Adds glow effect */
   background-color: darkblue; /* Changes button color */
+  cursor: pointer;
 }
 .container{
  display: flex;
