@@ -11,13 +11,12 @@ export default function Jobs()
     return(
 
         <>
-        <div className="jobs">
+        <div className="jobs" >
         {
             jobsData.map((job)=>{
-                return <Link>
-                <h4>Tittle:{job.title}</h4>
-                <h5>Location:{job.location}</h5>
-                <h6>Salary{job.react}</h6>
+                return <Link to={job.id.toString() } key={job.id}>
+                <p>{job.title}</p>
+                <p>{job.location}</p>
                 </Link>
             })
         }
