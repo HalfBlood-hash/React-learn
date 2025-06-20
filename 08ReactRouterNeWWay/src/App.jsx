@@ -13,6 +13,8 @@ import {Route,createBrowserRouter,createRoutesFromElements,RouterProvider} from 
 import NotFound from './Components/NotFound'
 import JobsLayout from './Components/jobsLayout'
 import Jobs, { jobloader } from './Components/Jobs'
+import JobDetails, { JobDetailsLoader } from './Components/JobDetails'
+import JobError from './Components/JobError'
 
 function App() {
   const router =createBrowserRouter(
@@ -28,6 +30,7 @@ function App() {
     <Route path="login" element={<Login />} />
     <Route path='jobs' element={<JobsLayout/>} >
     <Route index element={<Jobs/>}  loader={jobloader} />
+    <Route path=':id' element={<JobDetails/>} loader={JobDetailsLoader} errorElement={<JobError/>} />
     </Route>
     <Route path='*' element={<NotFound/>}/>
   </Route>
