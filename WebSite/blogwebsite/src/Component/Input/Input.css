@@ -1,0 +1,19 @@
+
+
+.custom-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Optional: define style variants */
+  .custom-input.primary {
+    border-color: blue;
+    color: darkblue;
+  }
+  
+  .custom-input.error {
+    border-color: red;
+  }
+  
